@@ -16,6 +16,10 @@
     margin-left: 93px;
     gap: 50px;
 
+    @media screen and (min-width:320px) and (max-width: 767px) {
+            display: none;
+        }
+
     &__link {
     display: inline-block;
     padding-top: 32px;
@@ -60,6 +64,16 @@
     &__list {
     display: flex;
     gap: 40px;
+
+    @media screen and (min-width:768px) and (max-width: 1199px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap:10px;
+        }
+
+    @media screen and (min-width:320px) and (max-width: 767px) {
+            display: none;
+        }
 }
 
     &__link {
