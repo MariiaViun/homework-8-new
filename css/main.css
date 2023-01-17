@@ -191,13 +191,13 @@ h2, p {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .section {
-    padding-bottom: 60px;
+    padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .section {
-    padding-bottom: 60px;
+    padding-top: 60px;
     padding-bottom: 60px;
   }
 }
@@ -425,7 +425,6 @@ h2, p {
   .hero {
     height: 400px;
     padding: 118px 60px;
-    height: 400px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -503,9 +502,14 @@ h2, p {
 .feature__item {
   width: 270px;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .feature__item {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .feature__item {
-    width: 50%;
+    width: 354px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -546,10 +550,15 @@ h2, p {
   margin-top: 0;
   margin-bottom: 10px;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .feature__title {
+    text-align: center;
+  }
+}
 
 .feature__text {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   margin-top: 0;
   margin-bottom: 0;
@@ -623,6 +632,13 @@ h2, p {
   margin-top: 0;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .team__title {
+    font-size: 28px;
+    line-height: 1.18;
+    margin-bottom: 30px;
+  }
+}
 .team__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -643,13 +659,13 @@ h2, p {
   border-radius: 0px 0px 4px 4px;
   background-color: #FFFFFF;
 }
+@media screen and (max-width: 767px) {
+  .employee:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 .employee__card {
   width: 270px;
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .employee__card {
-    width: 50%;
-  }
 }
 .employee__info {
   padding: 30px 32px;
@@ -682,6 +698,13 @@ h2, p {
   margin-top: 0;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .clients__title {
+    font-size: 28px;
+    line-height: 1.18;
+    margin-bottom: 30px;
+  }
+}
 
 .clients__list {
   display: -webkit-box;
@@ -694,6 +717,26 @@ h2, p {
       -ms-flex-align: center;
           align-items: center;
   gap: 30px;
+}
+@media screen and (min-width: 320px) and (max-width: 1119px) {
+  .clients__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.company {
+  width: 170px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .company {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .company {
+    width: 33.333%;
+  }
 }
 
 .company__item {
