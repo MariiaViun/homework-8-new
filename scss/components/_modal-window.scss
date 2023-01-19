@@ -27,6 +27,10 @@
      0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
+    @media screen and (min-width: 480px) and (max-width:1119px) {
+        width: 450px;
+    }
+
     &__button {
     position: absolute;
     top: 8px;
@@ -51,6 +55,10 @@
     width: 528px;
     display: block;
 
+    @media screen and (min-width: 480px) and (max-width:1119px) {
+        width: 450px;
+    }
+
     &__title {
     margin-bottom: 12px;
     font-weight: 700;
@@ -59,6 +67,10 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: $color-title;
+
+    @media screen and (min-width: 480px) and (max-width:1119px) {
+        width: 370px;
+    }
 }
 }
 
@@ -181,6 +193,11 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: $accent;
+
+    @media screen and (min-width: 480px) and (max-width:1119px) {
+        font-size: 12px;
+        line-height: 1.17;
+    }
 }
 
     &__label {
@@ -188,6 +205,11 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: $primary-text-color;
+
+    @media screen and (min-width: 480px) and (max-width:1119px) {
+        font-size: 12px;
+        line-height: 1.17;
+    }
 }
 }
 
