@@ -1,4 +1,6 @@
 .header {
+    position: relative;
+
     border-bottom: 1px solid $border-header;
     
     &__flex {
@@ -9,6 +11,37 @@
     display: flex;
     align-items: center;
 }
+}
+
+.menu-button .icon-cross {
+    display: none;
+}
+
+.menu-button.is-open .icon-cross {
+    display: block;
+}
+
+.menu-button.is-open .icon-menu {
+    display: none;
+}
+
+.menu-mobile {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 480px;
+    height: 796px;
+
+    background-color: $white;
+    padding: 48px 40px;
+    text-align: center;
+    font-size: 20px;
+
+    &.is-open {
+        display: block;
+    }
 }
 
 .menu {
