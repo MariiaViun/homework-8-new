@@ -13,6 +13,14 @@
 }
 }
 
+.menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
 .menu-button .icon-cross {
     display: none;
 }
@@ -25,7 +33,15 @@
     display: none;
 }
 
-.menu-mobile {
+
+// .menu-button.icon-cross {
+//     display: none;
+// }
+
+
+
+
+.menu-container {
     display: none;
 
     position: absolute;

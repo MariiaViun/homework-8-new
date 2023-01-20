@@ -87,6 +87,16 @@ h2, p {
           align-items: center;
 }
 
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
 .menu-button .icon-cross {
   display: none;
 }
@@ -99,7 +109,7 @@ h2, p {
   display: none;
 }
 
-.menu-mobile {
+.menu-container {
   display: none;
   position: absolute;
   top: 100%;
@@ -111,7 +121,7 @@ h2, p {
   text-align: center;
   font-size: 20px;
 }
-.menu-mobile.is-open {
+.menu-container.is-open {
   display: block;
 }
 
@@ -567,20 +577,6 @@ h2, p {
           box-shadow: 0px 4px 4px rgba(8, 4, 4, 0.15);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.menu-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-
-.menu-button .icon-cross {
-  display: none;
 }
 
 .button-footer {
